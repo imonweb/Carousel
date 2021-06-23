@@ -4,11 +4,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
   <link rel="stylesheet" href="main.css">
   <title>Carousel</title>
 </head>
 <body>
-  <h1>hello</h1>
+  <div class="carousel">
+    <button class="carousel__button carousel__button--left">
+      <!-- <img src="images/arrow-left.svg" alt="arrow left"> -->
+      <box-icon type='solid' name='chevron-left'></box-icon>
+    </button>
+
+    <div class="carousel__track-container">
+      <ul class="carousel__track">
+        <li class="carousel__slide current-slide">
+          <img class="carousel__image" src="images/5.jpg" alt="img">
+        </li>
+        <li class="carousel__slide">
+          <img class="carousel__image" src="images/6.jpg" alt="img">
+        </li>
+        <li class="carousel__slide">
+          <img class="carousel__image" src="images/7.jpg" alt="img">
+        </li>
+      </ul>
+    </div>
+    <button class="carousel__button carousel__button--right">
+      <!-- <img src="images/arrow-right.svg" alt="arrow right"> -->
+      <box-icon name='chevron-right' type='solid'></box-icon>
+    </button>
+
+    <div class="carousel__nav">
+      <button class="carousel__indicator current-slide"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+    </div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
